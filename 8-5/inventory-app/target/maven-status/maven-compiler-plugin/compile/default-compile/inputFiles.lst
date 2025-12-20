@@ -1,0 +1,16 @@
+C:\educure\8-5\inventory-app\src\main\java\com\example\inventory\service\UserService.java
+C:\educure\8-5\inventory-app\src\main\java\com\example\inventory\service\StorageService.java
+C:\educure\8-5\inventory-app\src\main\java\com\example\inventory\controller\UserController.java
+C:\educure\8-5\inventory-app\src\main\java\com\example\inventory\domain\User.java
+C:\educure\8-5\inventory-app\src\main\java\com\example\inventory\service\UserDetailsServiceImpl.java
+C:\educure\8-5\inventory-app\src\main\java\com\example\inventory\repository\InventoryRepository.java
+C:\educure\8-5\inventory-app\src\main\java\com\example\inventory\InventoryAppApplication.java
+C:\educure\8-5\inventory-app\src\main\java\com\example\inventory\repository\StorageRepository.java
+C:\educure\8-5\inventory-app\src\main\java\com\example\inventory\controller\StorageController.java
+C:\educure\8-5\inventory-app\src\main\java\com\example\inventory\domain\Inventory.java
+C:\educure\8-5\inventory-app\src\main\java\com\example\inventory\repository\UserRepository.java
+C:\educure\8-5\inventory-app\src\main\java\com\example\inventory\controller\InventoryController.java
+C:\educure\8-5\inventory-app\src\main\java\com\example\inventory\service\InventoryService.java
+C:\educure\8-5\inventory-app\src\main\java\com\example\inventory\service\CustomUserDetailsService.java
+C:\educure\8-5\inventory-app\src\main\java\com\example\inventory\domain\Storage.java
+C:\educure\8-5\inventory-app\src\main\java\com\example\inventory\SecurityConfig.java

@@ -1,0 +1,16 @@
+com\example\inventory\controller\StorageController.class
+com\example\inventory\service\InventoryService.class
+com\example\inventory\service\StorageService.class
+com\example\inventory\controller\InventoryController.class
+com\example\inventory\InventoryAppApplication.class
+com\example\inventory\domain\Inventory.class
+com\example\inventory\controller\UserController.class
+com\example\inventory\repository\InventoryRepository.class
+com\example\inventory\service\CustomUserDetailsService.class
+com\example\inventory\service\UserDetailsServiceImpl.class
+com\example\inventory\domain\Storage.class
+com\example\inventory\repository\StorageRepository.class
+com\example\inventory\SecurityConfig.class
+com\example\inventory\service\UserService.class
+com\example\inventory\domain\User.class
+com\example\inventory\repository\UserRepository.class
