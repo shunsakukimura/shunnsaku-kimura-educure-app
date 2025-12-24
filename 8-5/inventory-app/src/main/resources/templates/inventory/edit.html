@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>商品の編集 - 在庫管理システム</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
+        .edit-container { background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 100%; max-width: 500px; }
+        .form-label { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="edit-container">
+        <h2 class="text-center mb-4">✏️ 商品の編集</h2>
+        
+        <form th:action="@{/items/edit/{id}(id=${item.id})}" th:object="${item}" method="post">
+            <input type="hidden" th:field="*{id}">
+
+            <div class="mb-3">
+                <label for="itemName" class="form-label">食材名</label>
+                <input type="text" th:field="*{itemName}" class="form-control" th:errorclass="is-invalid">
+                <div class="invalid-feedback" th:errors="*{itemName}"></div>
+            </div>
+
+            <div class="mb-3">
+                <label for="quantity" class="form-label">数量</label>
+                <input type="number" th:field="*{quantity}" class="form-control" th:errorclass="is-invalid">
+                <div class="invalid-feedback" th:errors="*{quantity}"></div>
+            </div>
+
+            <div class="mb-3">
+                <label for="expirationDate" class="form-label">賞味期限</label>
+                <input type="date" th:field="*{expirationDate}" class="form-control">
+            </div>
+
+            <div class="mb-4">
+                <label for="storage" class="form-label">保存場所</label>
+                <select th:field="*{storage}" class="form-select">
+                    <option th:each="s : ${storages}" th:value="${s.id}" th:text="${s.storageName}"></option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 mb-3">更新する</button>
+            <div class="text-center">
+                <a th:href="@{/items}" class="text-secondary text-decoration-none">戻る</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

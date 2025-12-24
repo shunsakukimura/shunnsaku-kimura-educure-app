@@ -1,0 +1,101 @@
+/* inventory.css */
+
+/* 在庫画面コンテナ全体 */
+.inventory-container {
+    max-width: 800px;
+    padding: 20px 40px;
+}
+
+/* 検索バーのスタイリング */
+.search-bar {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    padding-left: 40px;
+}
+
+/* フォームグループ (ラベルと入力欄を縦に並べる) */
+.inventory-form .form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.inventory-form label {
+    font-weight: bold;
+    width: 100px;
+    text-align: left;
+}
+
+.inventory-form .text-input {
+    flex-grow: 1;
+    width: auto;
+}
+
+.register-button {
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* ---------------------------------- */
+/* 在庫リストのスタイリング */
+/* ---------------------------------- */
+
+.inventory-list {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.list-row {
+    display: flex;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    font-size: 14px;
+}
+
+.list-header {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    color: #555;
+    border-bottom: 2px solid #ddd;
+}
+
+.list-item {
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.2s;
+}
+
+.list-item:hover {
+    background-color: #f9f9f9;
+}
+
+/* カラム幅の指定 */
+.col-name { width: 30%; }
+.col-storage { width: 25%; }
+.col-qty { width: 15%; text-align: right; }
+.col-exp { width: 30%; text-align: right; }
+
+/* Floating Action Button (FAB) */
+.fab-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #6a0dad; 
+    color: white;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 56px;
+    font-size: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    z-index: 1000;
+}
